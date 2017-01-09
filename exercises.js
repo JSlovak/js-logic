@@ -5,7 +5,7 @@ var today = new Date();
 
 if(today === "Friday"){
   console.log("Let's Party!");
-};
+}
 
 /*
 If/else statements = Evaluates (or checks) a condition. If the condition is true, the first code block is executed. If the condition is false, the second code block is executed instead.
@@ -14,8 +14,8 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
 if(today === "Friday"){
   console.log("Let's Party!");
 }else{
-  console.log("Get back to coding!");
-};
+ console.log("Get back to coding!");
+}
 
 
 /*
@@ -28,7 +28,17 @@ if(today === "Friday"){
  *
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
+function canVote (age){
 
+  if (age >= 18) {
+    return true;
+  } else {
+      return false;
+  }
+}
+
+console.log (canVote(30));
+console.log (canVote(12));
 
 /*
  * #2
@@ -42,6 +52,14 @@ if(today === "Friday"){
  * Console.log your result.
 */
 
+function login (password){
+  if ( password === "test1234" ) {
+  return "Login Success!";
+  }
+}
+
+console.log (login("test1234"));
+console.log (login("something else"));
 
 /*
  * #3
@@ -56,6 +74,15 @@ if(today === "Friday"){
  * Console.log your result.
 */
 
+function isGreaterThan (first, second){
+  if (first > second) {
+    return true;
+  } 
+}
+
+console.log (isGreaterThan(5, 4));
+console.log (isGreaterThan(4, 5));
+
 
 /*
  * #4
@@ -69,6 +96,14 @@ if(today === "Friday"){
  * Console.log your result.
 */
 
+function mustBeTrue (boo) {
+  if (boo === "true") {
+    return true;
+  }
+}
+
+console.log (mustBeTrue("true"));
+console.log (mustBeTrue("meh"));
 
 /*
  * #5
