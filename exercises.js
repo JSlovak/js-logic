@@ -12,9 +12,9 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
 */
 
 if(today === "Friday"){
-  console.log("Let's Party!");
-}else{
- console.log("Get back to coding!");
+  return("Let's Party!");
+  }else{
+  return("Get back to coding!");
 }
 
 
@@ -115,8 +115,14 @@ console.log (mustBeTrue("meh"));
  *
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
-*/
+*/ 
+function bigBird (word){
+  if (word.length > 3)
+    {return "Word to the Big Bird!";
+  }
+}
 
+console.log (bigBird("cats"));
 
 /*
  * #6
@@ -131,7 +137,13 @@ console.log (mustBeTrue("meh"));
  * Console.log your result.
 */
 
+function isEqual (first, second) {
+  if (first === second){
+    return " You look mahvelous! ";
+  } else return " I don't know you anymore ";
+}
 
+console.log (isEqual());
 /*
  * #7
  * Function - notEqual
@@ -145,6 +157,16 @@ console.log (mustBeTrue("meh"));
  * Console.log your result.
 */
 
+function notEqual (first, second){
+  if (first === second) {
+    return "'Cause it's like you're my mirror.";
+  }
+ else {
+  return "Opposites do attract";
+}
+
+console.log (notEqual("spam", "spam"));
+console.log(notEqual("spam", "veggies"));
 
 /*
  * #8
@@ -157,6 +179,18 @@ console.log (mustBeTrue("meh"));
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
+
+function spareChange (money){
+  if (money > 100) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+console.log(spareChange(99));
+console.log (spareChange(300));
 
 
 /*
@@ -173,6 +207,14 @@ console.log (mustBeTrue("meh"));
  * Console.log your result.
 */ 
 
+function dirty30 (one, two, three){ 
+  if (one + two + three => 30) { 
+    return true; 
+    }
+    else {
+      return false;
+    }
+}
 
 /*
  * #10
@@ -185,6 +227,10 @@ console.log (mustBeTrue("meh"));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
+
+function evenStevens (num){
+  if (num + num5) / 2 =  
+}
 
 
 /*
@@ -200,6 +246,17 @@ console.log (mustBeTrue("meh"));
  * Console.log your result.
 */ 
 
+function daClub (cover, age){
+  if (cover => 21 && age =>21){
+    return " Welcome to the Legends Lounge";
+  }else {
+    return " Chuck E Cheese is across the street.";
+  }
+}
+
+console.log(daClub(21, 30));
+console.log(daClub( 0, 19));
+
 
 /*
  * #12
@@ -214,6 +271,14 @@ console.log (mustBeTrue("meh"));
  * Console.log your result.
 */ 
 
+function graduation (credits, thesis){
+  if (credit => 120 || thesis = true){
+    return  "Congratulations on a job well done.";
+  } else { "See you in Summer School. ";}
+}
+
+console.log (graduation(135,()));
+console.log (graduation(110, A));
 
 /*
  * #13
@@ -225,9 +290,19 @@ console.log (mustBeTrue("meh"));
  *
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
+
 */ 
 
+function moneyTrain (speed) {
+  if (speed =< 50) {
+    return "You are riding an Amtrack.";
+  }else/if (speed => 100) {
+    return " Now you ballin' in the Shinkansen!";
+  }
+}
 
+console.log (moneyTrain(45));
+console.log (moneyTrain(230));
 /*
  * #14
  * Function - buyDoughnut
@@ -241,8 +316,17 @@ console.log (mustBeTrue("meh"));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+  var buget = 25;
+  var = doughnutPrice = 5;
+  var doughnutBought = 0;
 
+function buyDoughnut (){
+bugdet - doughnutPrice;
+doughnutBought + 1; 
+}
 
+console.log (buyDoughnut(budget, doughnutBought));
+console.log (buyDoughnut(budget, doughnutBought));
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
 
@@ -270,6 +354,11 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var teaMate = [ "Player:1", "Player: 2", "Player:3", "Player:4,", "Player: 5"];
+
+for (var i = 0; i<teaMate.legnth; i++) {
+  console.log ("Team-mate" + teaMate[i]);
+}
 
 /* 
  * #16
@@ -277,6 +366,9 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for (var i = 0; i<myFavFoods.length; i++){
+  console.log (myFavFoods);
+} 
 
 /*
  * #17
@@ -293,6 +385,13 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
+var numArray = [ 2, 3, 9, 12, 15, 23];
+var total = 0 
+
+function sumItUp (arr){
+  for var i = 0; i<numArray.length; i
+
+}
 
 /*
  * #18
@@ -339,8 +438,6 @@ Final Boss
 
   var phrase = "An apple a day keeps Alice feeling awesome!"
   
-
-
 
 
 
